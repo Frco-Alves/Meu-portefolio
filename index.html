@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;400;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Port-Folio</title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">Portfólio</div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Serviços</a>
+            <a href="#">Fale Comigo</a>
+        </div>
+
+        <div class="relogio-digital">
+            <ul id="relogio">
+                <li class="item-circulo" style="--clr:#d9ff02;">
+                    <!--<svg>
+                        <circle cx="10" cy="10" r="20"></circle>
+                        <circle cx="10" cy="10" r="20" id="hh"></circle>
+                     </svg> <!-->
+                    <div id="horas">:</div>
+                </li>
+
+                <li class="item-circulo" style="--clr:#bb00ff;">
+                    <!--<svg>
+                       <circle cx="15" cy="28" r="23"></circle>
+                       <circle cx="15" cy="28" r="23" id="mm"></circle>
+                    </svg> <!-->
+                    <div id="minutos">:</div>
+                </li>
+
+                <li class="item-circulo" style="--clr:#ff9100;">
+                    <!--<svg>
+                   <circle cx="15" cy="28" r="23"></circle>
+                   <circle cx="15" cy="28" r="23" id="ss"></circle>
+                </svg> <!-->
+                    <div id="segundos">:</div>
+                </li>
+
+                <li class="ap">
+                    <div id="ampm">AM</div>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <div class="div-main">
+
+        <section class="section-esquerda" id="person">
+            <div class="person-content">
+                <div class="person-name">
+
+                    <h1>Olá <span></span></h1>
+                    <h1>Meu nome é <span></span></h1>
+                    <h1>Fco.Alves <span></span></h1>
+
+                </div>
+            </div>
+
+            <div class="stacks-content">
+                <h3>Techs :</h3>
+
+                <div class="stacks">
+                    <ul>
+                        <li>
+                            <div data="HTML">
+                                <img src="./svg/html.svg" alt="html-icon">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div data="CSS">
+                                <img src="./svg/css.svg" alt="css-icon">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div data="Js">
+                                <img src="./svg/js.svg" alt="js-icon">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div data="React">
+                                <img src="./svg/react.svg" alt="react-icon">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div data="Node">
+                                <img src="./svg/node.svg" alt="node-icon">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <section class="section-direita">
+
+            <div class="container">
+                <video class="video" autoplay muted loop>
+                    <source id="video-souce" src="./video/video/video1.mp4" type="video/mp4">
+                </video>
+
+
+                <div class="caixa">
+                    <div class="procura">
+                        <button onclick="botaoDeBusca()">
+                            <img class="img-lupa" src="./img/lupa.png" alt="icone-lupa">
+                        </button>
+                        <input id="input-busca" placeholder="coloque o nome da cidade" type="text">
+                    </div>
+
+                    <div class="envelope">
+                        <div class="conteudo-clima">
+                            <img class="icone-tempo" src="./img/01d.png" alt="icone-tempo">
+                            <h2 class="nome-cidade">Paris</h2>
+                            <h3 class="temperatura">22°C</h3>
+
+                            <div class="conteudo-variacoes">
+                                <p class="maxTemperatura">máx: 23°C</p>
+                                <p class="minTemperatura">mín: 21°C</p>
+                            </div>
+                        </div>
+
+                        <div class="conteudo-musica">
+                            <img class="icone-musica" src="./img/Musica.png" alt="musica-icon">
+                            <h2>Playlist</h2>
+
+                            <ul class="playlist-caixa">
+                                <li>
+                                    <img src="./img/spotify.png" alt="spotify-icon">
+                                    <p>Nouveautés Pop</p>
+                                </li>
+                                <li>
+                                    <img src="./img/spotify.png" alt="spotify-icon">
+                                    <p>Nouveautés Pop</p>
+                                </li>
+                                <li>
+                                    <img src="./img/spotify.png" alt="spotify-icon">
+                                    <p>Nouveautés Pop</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+    <script src="./right.js"></script>
+</body>
+
+</html>
